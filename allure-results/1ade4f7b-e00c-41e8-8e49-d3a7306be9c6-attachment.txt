@@ -1,0 +1,6 @@
+pm.test("Status is Contains 'slip' with 'advice'", function () {
+    pm.response.to.have.status(Contains 'slip' with 'advice');
+});
+pm.test("Response time < slip.advicems", function () {
+    pm.expect(pm.response.responseTime).to.be.below(slip.advice);
+});

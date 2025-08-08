@@ -1,0 +1,21 @@
+{
+    "Date": "Fri, 08 Aug 2025 06:46:27 GMT",
+    "Server": "Apache",
+    "Expires": "Fri, 08 Aug 2025 06:46:32 GMT",
+    "Cache-Control": "max-age=600, private, must-revalidate",
+    "X-Xss-Protection": "1; mode=block",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+    "Vary": "Accept-Encoding",
+    "Content-Encoding": "gzip",
+    "Content-Security-Policy": "default-src 'self';   script-src 'self' data: 'unsafe-inline' adviceslip.com ssl.google-analytics.com www.google-analytics.com www.googletagmanager.com storage.ko-fi.com cdn.usefathom.com;   connect-src 'self';   style-src 'self' 'unsafe-inline' fonts.googleapis.com;   frame-src;   img-src * ;   object-src 'none';   font-src * 'self' data:;",
+    "Permissions-Policy": "*",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "origin, x-requested-with, content-type",
+    "Access-Control-Allow-Methods": "GET, OPTIONS",
+    "Content-Length": "99",
+    "Keep-Alive": "timeout=5, max=99",
+    "Connection": "Keep-Alive",
+    "Content-Type": "text/html; charset=UTF-8"
+}

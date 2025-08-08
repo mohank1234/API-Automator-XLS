@@ -1,0 +1,16 @@
+{
+    "Server": "nginx/1.4.6 (Ubuntu)",
+    "Date": "Fri, 08 Aug 2025 06:29:38 GMT",
+    "Content-Type": "text/plain; charset=utf-8",
+    "Content-Length": "71",
+    "Connection": "keep-alive",
+    "X-Powered-By": "Express",
+    "Access-Control-Allow-Origin": "*",
+    "X-Numbers-API-Number": "187",
+    "X-Numbers-API-Type": "trivia",
+    "Pragma": "no-cache",
+    "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+    "Expires": "0",
+    "ETag": "W/\"47-mg6oUF/zY8MEkuX+NKpzy/sqVRk\"",
+    "Last-Modified": "1754634578"
+}

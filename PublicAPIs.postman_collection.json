@@ -1,0 +1,211 @@
+{
+  "info": {
+    "name": "10 Free Public APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "JSONPlaceholder - Posts",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts",
+          "protocol": "https",
+          "host": ["jsonplaceholder", "typicode", "com"],
+          "path": ["posts"]
+        }
+      }
+    },
+    {
+      "name": "REST Countries - All",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://restcountries.com/v3.1/all",
+          "protocol": "https",
+          "host": ["restcountries", "com"],
+          "path": ["v3.1", "all"]
+        }
+      }
+    },
+    {
+      "name": "Open-Meteo - Weather",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.open-meteo.com/v1/forecast?latitude=35&longitude=139&hourly=temperature_2m",
+          "protocol": "https",
+          "host": ["api", "open-meteo", "com"],
+          "path": ["v1", "forecast"],
+          "query": [
+            { "key": "latitude", "value": "35" },
+            { "key": "longitude", "value": "139" },
+            { "key": "hourly", "value": "temperature_2m" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cat Facts",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://catfact.ninja/fact",
+          "protocol": "https",
+          "host": ["catfact", "ninja"],
+          "path": ["fact"]
+        }
+      }
+    },
+    {
+      "name": "Dog CEO - Random Dog",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://dog.ceo/api/breeds/image/random",
+          "protocol": "https",
+          "host": ["dog", "ceo"],
+          "path": ["api", "breeds", "image", "random"]
+        }
+      }
+    },
+    {
+      "name": "Numbers API - Random",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://numbersapi.com/random/trivia",
+          "protocol": "http",
+          "host": ["numbersapi", "com"],
+          "path": ["random", "trivia"]
+        }
+      }
+    },
+    {
+      "name": "Free Dictionary - Word",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.dictionaryapi.dev/api/v2/entries/en/example",
+          "protocol": "https",
+          "host": ["api", "dictionaryapi", "dev"],
+          "path": ["api", "v2", "entries", "en", "example"]
+        }
+      }
+    },
+    {
+      "name": "PokeAPI - Pikachu",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://pokeapi.co/api/v2/pokemon/pikachu",
+          "protocol": "https",
+          "host": ["pokeapi", "co"],
+          "path": ["api", "v2", "pokemon", "pikachu"]
+        }
+      }
+    },
+    {
+      "name": "Rick and Morty - Characters",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://rickandmortyapi.com/api/character",
+          "protocol": "https",
+          "host": ["rickandmortyapi", "com"],
+          "path": ["api", "character"]
+        }
+      }
+    },
+    {
+      "name": "Advice Slip",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.adviceslip.com/advice",
+          "protocol": "https",
+          "host": ["api", "adviceslip", "com"],
+          "path": ["advice"]
+        }
+      }
+    },
+    {
+      "name": "WeatherAPI",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=London",
+          "protocol": "https",
+          "host": ["api", "weatherapi", "com"],
+          "path": ["v1", "current.json"],
+          "query": [
+            { "key": "key", "value": "YOUR_API_KEY" },
+            { "key": "q", "value": "London" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "OpenWeatherMap",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY",
+          "protocol": "https",
+          "host": ["api", "openweathermap", "org"],
+          "path": ["data", "2.5", "weather"],
+          "query": [
+            { "key": "q", "value": "London" },
+            { "key": "appid", "value": "YOUR_API_KEY" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "NASA",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
+          "protocol": "https",
+          "host": ["api", "nasa", "gov"],
+          "path": ["planetary", "apod"],
+          "query": [
+            { "key": "api_key", "value": "DEMO_KEY" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Binance",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT",
+          "protocol": "https",
+          "host": ["api", "binance", "com"],
+          "path": ["api", "v3", "ticker", "price"],
+          "query": [
+            { "key": "symbol", "value": "BTCUSDT" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "CoinGecko",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd",
+          "protocol": "https",
+          "host": ["api", "coingecko", "com"],
+          "path": ["api", "v3", "simple", "price"],
+          "query": [
+            { "key": "ids", "value": "bitcoin" },
+            { "key": "vs_currencies", "value": "usd" }
+          ]
+        }
+      }
+    }
+  ]
+}

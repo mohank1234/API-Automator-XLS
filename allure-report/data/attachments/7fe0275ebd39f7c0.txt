@@ -1,0 +1,6 @@
+pm.test("Status is Contains 'message' with image URL", function () {
+    pm.response.to.have.status(Contains 'message' with image URL);
+});
+pm.test("Response time < messagems", function () {
+    pm.expect(pm.response.responseTime).to.be.below(message);
+});

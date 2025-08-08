@@ -1,0 +1,6 @@
+pm.test("Status is Response time less than 1.5s", function () {
+    pm.response.to.have.status(Response time less than 1.5s);
+});
+pm.test("Response time < < 1500 msms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(< 1500 ms);
+});

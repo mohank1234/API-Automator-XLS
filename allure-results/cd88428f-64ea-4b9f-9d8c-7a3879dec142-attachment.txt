@@ -1,0 +1,6 @@
+pm.test("Status is Response body contains 'userId' field", function () {
+    pm.response.to.have.status(Response body contains 'userId' field);
+});
+pm.test("Response time < userIdms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(userId);
+});

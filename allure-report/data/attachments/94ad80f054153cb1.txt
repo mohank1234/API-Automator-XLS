@@ -1,0 +1,6 @@
+pm.test("Status is Contains 'location' and 'current'", function () {
+    pm.response.to.have.status(Contains 'location' and 'current');
+});
+pm.test("Response time < location,currentms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(location,current);
+});

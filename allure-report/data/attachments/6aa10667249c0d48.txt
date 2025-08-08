@@ -1,0 +1,6 @@
+pm.test("Status is Contains 'title' and 'url'", function () {
+    pm.response.to.have.status(Contains 'title' and 'url');
+});
+pm.test("Response time < title,urlms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(title,url);
+});

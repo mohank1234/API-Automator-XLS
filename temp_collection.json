@@ -1,0 +1,778 @@
+{
+  "info": {
+    "name": "Excel-driven API Tests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "JSONPlaceholder - Posts - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://jsonplaceholder.typicode.com/posts"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "JSONPlaceholder - Posts - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://jsonplaceholder.typicode.com/posts"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Response time less than 1s\", function () {",
+              "    pm.response.to.have.status(Response time less than 1s);",
+              "});",
+              "pm.test(\"Response time < < 1000 msms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(< 1000 ms);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "JSONPlaceholder - Posts - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://jsonplaceholder.typicode.com/posts"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Response body contains 'userId' field\", function () {",
+              "    pm.response.to.have.status(Response body contains 'userId' field);",
+              "});",
+              "pm.test(\"Response time < userIdms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(userId);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "REST Countries - All - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://restcountries.com/v3.1/all"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "REST Countries - All - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://restcountries.com/v3.1/all"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Response contains list of countries\", function () {",
+              "    pm.response.to.have.status(Response contains list of countries);",
+              "});",
+              "pm.test(\"Response time < Array length > 0ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(Array length > 0);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "REST Countries - All - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://restcountries.com/v3.1/all"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Response time less than 1.5s\", function () {",
+              "    pm.response.to.have.status(Response time less than 1.5s);",
+              "});",
+              "pm.test(\"Response time < < 1500 msms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(< 1500 ms);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Open-Meteo - Weather - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.open-meteo.com/v1/forecast?latitude=35&longitude=139&hourly=temperature_2m"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Open-Meteo - Weather - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.open-meteo.com/v1/forecast?latitude=35&longitude=139&hourly=temperature_2m"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains hourly temperature data\", function () {",
+              "    pm.response.to.have.status(Contains hourly temperature data);",
+              "});",
+              "pm.test(\"Response time < temperature_2mms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(temperature_2m);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Open-Meteo - Weather - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.open-meteo.com/v1/forecast?latitude=35&longitude=139&hourly=temperature_2m"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Response time less than 1s\", function () {",
+              "    pm.response.to.have.status(Response time less than 1s);",
+              "});",
+              "pm.test(\"Response time < < 1000 msms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(< 1000 ms);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cat Facts - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://catfact.ninja/fact"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cat Facts - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://catfact.ninja/fact"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains 'fact' key\", function () {",
+              "    pm.response.to.have.status(Contains 'fact' key);",
+              "});",
+              "pm.test(\"Response time < factms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(fact);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cat Facts - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://catfact.ninja/fact"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Response time less than 1s\", function () {",
+              "    pm.response.to.have.status(Response time less than 1s);",
+              "});",
+              "pm.test(\"Response time < < 1000 msms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(< 1000 ms);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dog CEO - Random Dog - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://dog.ceo/api/breeds/image/random"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dog CEO - Random Dog - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://dog.ceo/api/breeds/image/random"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains 'message' with image URL\", function () {",
+              "    pm.response.to.have.status(Contains 'message' with image URL);",
+              "});",
+              "pm.test(\"Response time < messagems\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(message);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dog CEO - Random Dog - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://dog.ceo/api/breeds/image/random"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Response time less than 1s\", function () {",
+              "    pm.response.to.have.status(Response time less than 1s);",
+              "});",
+              "pm.test(\"Response time < < 1000 msms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(< 1000 ms);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Numbers API - Random - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "http://numbersapi.com/random/trivia"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Numbers API - Random - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "http://numbersapi.com/random/trivia"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Returns a text trivia fact\", function () {",
+              "    pm.response.to.have.status(Returns a text trivia fact);",
+              "});",
+              "pm.test(\"Response time < textms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(text);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Free Dictionary - Word - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.dictionaryapi.dev/api/v2/entries/en/example"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Free Dictionary - Word - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.dictionaryapi.dev/api/v2/entries/en/example"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains 'word' field with 'example'\", function () {",
+              "    pm.response.to.have.status(Contains 'word' field with 'example');",
+              "});",
+              "pm.test(\"Response time < wordms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(word);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PokeAPI - Pikachu - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://pokeapi.co/api/v2/pokemon/pikachu"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PokeAPI - Pikachu - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://pokeapi.co/api/v2/pokemon/pikachu"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains 'name' as 'pikachu'\", function () {",
+              "    pm.response.to.have.status(Contains 'name' as 'pikachu');",
+              "});",
+              "pm.test(\"Response time < name=pikachums\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(name=pikachu);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Rick and Morty - Characters - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://rickandmortyapi.com/api/character"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Rick and Morty - Characters - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://rickandmortyapi.com/api/character"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains 'results' array\", function () {",
+              "    pm.response.to.have.status(Contains 'results' array);",
+              "});",
+              "pm.test(\"Response time < resultsms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(results);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Advice Slip - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.adviceslip.com/advice"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Advice Slip - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.adviceslip.com/advice"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains 'slip' with 'advice'\", function () {",
+              "    pm.response.to.have.status(Contains 'slip' with 'advice');",
+              "});",
+              "pm.test(\"Response time < slip.advicems\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(slip.advice);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "WeatherAPI - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=London"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "WeatherAPI - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=London"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains 'location' and 'current'\", function () {",
+              "    pm.response.to.have.status(Contains 'location' and 'current');",
+              "});",
+              "pm.test(\"Response time < location,currentms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(location,current);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "OpenWeatherMap - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "OpenWeatherMap - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains 'main' and 'weather'\", function () {",
+              "    pm.response.to.have.status(Contains 'main' and 'weather');",
+              "});",
+              "pm.test(\"Response time < main,weatherms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(main,weather);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "NASA - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "NASA - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains 'title' and 'url'\", function () {",
+              "    pm.response.to.have.status(Contains 'title' and 'url');",
+              "});",
+              "pm.test(\"Response time < title,urlms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(title,url);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Binance - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Binance - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains 'symbol' and 'price'\", function () {",
+              "    pm.response.to.have.status(Contains 'symbol' and 'price');",
+              "});",
+              "pm.test(\"Response time < symbol,pricems\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(symbol,price);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "CoinGecko - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Status code is 200\", function () {",
+              "    pm.response.to.have.status(Status code is 200);",
+              "});",
+              "pm.test(\"Response time < 200ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "CoinGecko - Test the API",
+      "request": {
+        "method": "GET",
+        "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status is Contains 'bitcoin' object with 'usd'\", function () {",
+              "    pm.response.to.have.status(Contains 'bitcoin' object with 'usd');",
+              "});",
+              "pm.test(\"Response time < bitcoin.usdms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(bitcoin.usd);",
+              "});"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

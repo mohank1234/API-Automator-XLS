@@ -1,0 +1,20 @@
+{
+    "Date": "Fri, 08 Aug 2025 06:46:30 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Expose-Headers": "X-RateLimit-Limit, X-RateLimit-Remaining",
+    "Age": "1",
+    "Content-Encoding": "gzip",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Vary": "Accept-Encoding",
+    "Via": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])",
+    "X-Api-Umbrella-Request-Id": "coh1n5iorhegpplqfvcg",
+    "X-Cache": "MISS",
+    "X-Content-Type-Options": "nosniff",
+    "X-Ratelimit-Limit": "10",
+    "X-Ratelimit-Remaining": "0",
+    "X-Vcap-Request-Id": "59697770-f374-4c37-700d-07747297dc15",
+    "X-Frame-Options": "DENY"
+}

@@ -1,0 +1,6 @@
+pm.test("Status is Response contains list of countries", function () {
+    pm.response.to.have.status(Response contains list of countries);
+});
+pm.test("Response time < Array length > 0ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(Array length > 0);
+});

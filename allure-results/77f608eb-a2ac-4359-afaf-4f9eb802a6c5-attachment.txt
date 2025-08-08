@@ -1,0 +1,6 @@
+pm.test("Status is Returns a text trivia fact", function () {
+    pm.response.to.have.status(Returns a text trivia fact);
+});
+pm.test("Response time < textms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(text);
+});

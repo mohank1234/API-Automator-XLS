@@ -1,0 +1,6 @@
+pm.test("Status is Contains 'bitcoin' object with 'usd'", function () {
+    pm.response.to.have.status(Contains 'bitcoin' object with 'usd');
+});
+pm.test("Response time < bitcoin.usdms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(bitcoin.usd);
+});

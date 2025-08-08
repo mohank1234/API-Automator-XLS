@@ -1,0 +1,6 @@
+pm.test("Status is Status code is 200", function () {
+    pm.response.to.have.status(Status code is 200);
+});
+pm.test("Response time < 200ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(200);
+});
